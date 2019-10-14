@@ -16,6 +16,7 @@ scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
 
  public void ConfigureServices(IServiceCollection services)
+ 
  {
       services.AddSwaggerGen(c =>
         {
@@ -44,7 +45,8 @@ Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
  
  
  public void Configure(IApplicationBuilder app)
-{
+
+ {
     // Enable middleware to serve generated Swagger as a JSON endpoint.
     app.UseSwagger();
 
