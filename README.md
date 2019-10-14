@@ -18,8 +18,9 @@ Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
  public void ConfigureServices(IServiceCollection services)
  
  {
-      services.AddSwaggerGen(c =>
-        {
+  services.AddSwaggerGen(c =>
+    
+   {
           c.SwaggerDoc("v1", new OpenApiInfo
         {
             Version = "v1",
