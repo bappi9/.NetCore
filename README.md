@@ -11,24 +11,28 @@
 
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts"
+
 # Swagger Add Package
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
+
  public void ConfigureServices(IServiceCollection services)
  {
       services.AddSwaggerGen(c =>
         {
-    c.SwaggerDoc("v1", new OpenApiInfo
+          c.SwaggerDoc("v1", new OpenApiInfo
         {
             Version = "v1",
             Title = "ToDo API",
             Description = "A simple example ASP.NET Core Web API",
             TermsOfService = new Uri("https://example.com/terms"),
+            
             Contact = new OpenApiContact
             {
                 Name = "Shayne Boyer",
                 Email = string.Empty,
                 Url = new Uri("https://twitter.com/spboyer"),
             },
+            
             License = new OpenApiLicense
             {
                 Name = "Use under LICX",
