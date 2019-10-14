@@ -1,6 +1,6 @@
 # .NetCoreSqlConnection
 .Net Core Sql Connection with Entity Framework and Dapper ORM(Dot Net Core)
-# Nuget Pakeges
+# Nuget Package
 1.microsoft.extensions.configuration
 2.microsoft.extensions.configuration.json
 3.system.data.SqlClient
@@ -11,3 +11,5 @@
 
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts"
+# Swagger Add Package
+Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
