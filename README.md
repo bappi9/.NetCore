@@ -10,7 +10,7 @@
 7.Microsoft.EntityFrameworkCore.Design
 
 # Data First Console Mode scaffold
-scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts"
+scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -schema "mds" -f
 
 # Swagger Add Package
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
