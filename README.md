@@ -14,6 +14,7 @@ scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=
 
 # Swagger Add Package
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
+Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
 
  public void ConfigureServices(IServiceCollection services)
  
