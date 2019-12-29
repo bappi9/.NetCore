@@ -1,13 +1,13 @@
 # .NetCoreSqlConnection
 .Net Core Sql Connection with Entity Framework and Dapper ORM(Dot Net Core)
 # Nuget Package
-1.microsoft.extensions.configuration
-2.microsoft.extensions.configuration.json
-3.system.data.SqlClient
-4.System.Data.Common
-5.Microsoft.EntityFrameworkCore.SqlServer
-6.Microsoft.EntityFrameworkCore.Tools
-7.Microsoft.EntityFrameworkCore.Design
+1.Install-Package microsoft.extensions.configuration
+2.Install-Package microsoft.extensions.configuration.json
+3.Install-Package system.data.SqlClient
+4.Install-Package System.Data.Common
+5.Install-Package Microsoft.EntityFrameworkCore.SqlServer
+6.Install-Package Microsoft.EntityFrameworkCore.Tools
+7.Install-Package Microsoft.EntityFrameworkCore.Design
 
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -schema "mds" -f
