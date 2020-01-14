@@ -9,6 +9,21 @@
 6.Install-Package Microsoft.EntityFrameworkCore.Tools
 7.Install-Package Microsoft.EntityFrameworkCore.Design
 
+#...
+Install-Package microsoft.extensions.configuration
+Install-Package microsoft.extensions.configuration.json
+Install-Package system.data.SqlClient
+Install-Package System.Data.Common
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package System.Linq.Dynamic.Core -Version 1.0.19
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer -Version 3.1.0
+Install-Package Microsoft.IdentityModel.Tokens -Version 5.6.0
+Install-Package System.IdentityModel.Tokens.Jwt -Version 5.6.0
+Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
+Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
+
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -schema "mds" -f
 
