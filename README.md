@@ -28,7 +28,7 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -schema "mds" -f
 
-#ElasticSearch with Serilog install
+# ElasticSearch with Serilog install
 
 Install-Package Serilog.Exceptions
 Install-Package Serilog
