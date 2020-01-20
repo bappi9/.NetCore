@@ -28,6 +28,43 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
 # Data First Console Mode scaffold
 scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=test;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -schema "mds" -f
 
+#ElasticSearch with Serilog install
+
+Install-Package Serilog.Exceptions
+Install-Package Serilog
+Install-Package Serilog.Enrichers.Environme
+Install-Package Serilog.Extensions.Logging
+Install-Package Serilog.Sinks.Elasticsearch
+
+  public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+        {
+           
+
+            var elasticUri = "http://172.17.17.25:8064/";//Configuration["ElasticConfiguration:Uri"];
+
+            Log.Logger = new LoggerConfiguration()
+               .Enrich.FromLogContext()
+               .Enrich.WithExceptionDetails()
+               .Enrich.WithMachineName()
+               .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(elasticUri))
+               {
+                   AutoRegisterTemplate = true,
+               })
+            .CreateLogger();
+        }
+            
+public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.AddSerilog();
+             
+            loggerFactory.AddSerilog();
+            // app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            // app.UseCookiePolicy();
+
+            
+        }
+        
 # Swagger Add Package
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
 Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
