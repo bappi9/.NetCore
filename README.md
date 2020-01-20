@@ -31,9 +31,13 @@ scaffold-DbContext "Data Source=test;Initial Catalog=test;User ID=test;Password=
 # ElasticSearch with Serilog install
 
 Install-Package Serilog.Exceptions
+
 Install-Package Serilog
+
 Install-Package Serilog.Enrichers.Environme
+
 Install-Package Serilog.Extensions.Logging
+
 Install-Package Serilog.Sinks.Elasticsearch
 
   public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
