@@ -124,3 +124,55 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
 }
 #Help for Swagger
 https://github.com/aspnet/AspNetCore.Docs/tree/master/aspnetcore/tutorials/web-api-help-pages-using-swagger/samples/3.0/TodoApi.Swashbuckle
+
+
+#Intelligence  Business Operation System
+iBOS
+ └── msto     
+ |      ├── Controler
+ |      |     └── EmployeeController.cs
+ |      ├── Helper
+ |      |     └── JsonConverter.cs
+ |      ├── Repository
+ |      |      └── HR
+ |      |      |    └── Employee.cs
+ |      ├── IRepository
+ |      |      └── HR
+ |      |      |    └── IEmployee.cs
+ |      ├── DataTransferObject
+ |      |      └── EmployeeDetalisDTO.cs
+ |      ├── Model
+ |      |      └── HR
+ |      |      |   └── tblEmployee.cs     
+ |      ├── Db_COntext
+ |      |      └── HR
+ |      |      |   └── Db_context_Hr.cs
+ |      ├── Strtup.cs
+ |      ├─ Program.cs
+ └── fino
+ |      ├── Controler
+ |      |     └── AccountsController.cs
+ |      ├── Helper
+ |      |     └── JsonConverter.cs
+ |      ├── Repository
+ |      |      └── fino
+ |      |      |    └── Accounts.cs
+ |      ├── IRepository
+ |      |      └── fino
+ |      |      |    └── IAccounts.cs
+ |      ├── DataTransferObject
+ |      |      └── EmployeeDetalisDTO.cs
+ |      ├── Model
+ |      |      └── fino
+ |      |      |   └── tblAccounts.cs     
+ |      ├── Db_COntext
+ |      |      └── fino
+ |      |      |   └── Db_context_Fino.cs
+ |      ├── Strtup.cs
+ |      ├─ Program.cs
+ └── hrso
+ └── sado
+ └── scmo
+ └── logo
+ └── meso
+ └── crmo
