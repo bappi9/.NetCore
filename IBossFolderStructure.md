@@ -35,7 +35,7 @@ iBOS
  |      |      └── fino
  |      |      |    └── IAccounts.cs
  |      ├── DataTransferObject
- |      |      └── EmployeeDetalisDTO.cs
+ |      |      └── AccountsDTO.cs
  |      ├── Model
  |      |      └── fino
  |      |      |   └── tblAccounts.cs     
