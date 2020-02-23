@@ -34,11 +34,13 @@ Install-Package Serilog.Exceptions
 
 Install-Package Serilog
 
-Install-Package Serilog.Enrichers.Environme
+Install-Package Serilog.Enrichers.Environment
 
 Install-Package Serilog.Extensions.Logging
 
 Install-Package Serilog.Sinks.Elasticsearch
+
+Install-Package Elastic.Apm.NetCoreAll
 
   public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
         {
