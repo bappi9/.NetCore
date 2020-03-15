@@ -124,6 +124,10 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
         endpoints.MapControllers();
     });
 }
+# APiGateway with Ocelot run Swaager
+
+Install-Package MMLib.SwaggerForOcelot -Version 2.0.0-alpha.2
+
 #Help for Swagger
 https://github.com/aspnet/AspNetCore.Docs/tree/master/aspnetcore/tutorials/web-api-help-pages-using-swagger/samples/3.0/TodoApi.Swashbuckle
 
