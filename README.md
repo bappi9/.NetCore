@@ -124,6 +124,18 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
         endpoints.MapControllers();
     });
 }
+#Testing Pakage
+install-Package MartinCostello.Logging.XUnit -Version 0.1.0
+install-Package Microsoft.AspNetCore.Hosting.Abstractions -Version 2.2.0
+install-Package Microsoft.AspNetCore.Mvc.Testing -Version 3.1.3
+install-Package Microsoft.Extensions.Hosting.Abstractions -Version 3.1.3
+install-Package Microsoft.Extensions.Logging -Version 3.1.3
+install-Package Microsoft.Extensions.Logging.Abstractions -Version 3.1.3
+install-Package Microsoft.NET.Test.Sdk -Version 16.2.0
+install-Package Microsoft.VisualStudio.Threading -Version 16.6.13
+Install-Package xunit -Version 2.4.1
+Install-Package xunit.runner.visualstudio -Version 2.4.1
+
 # APiGateway with Ocelot run Swaager
 
 Install-Package MMLib.SwaggerForOcelot -Version 2.0.0-alpha.2
