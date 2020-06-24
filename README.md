@@ -195,14 +195,14 @@ iBOS
  └── meso
  └── crmo
 # Latest
-Install-Package System.Linq.Dynamic.Core -Version 1.0.19
-Install-Package System.IdentityModel.Tokens.Jwt -Version 1.0.19
-Install-Package system.data.SqlClient -Version 4.8.1
+ Install-Package System.Linq.Dynamic.Core -Version 1.1.5
+Install-Package System.IdentityModel.Tokens.Jwt -Version 5.5.0
+Install-Package System.Data.SqlClient -Version 4.8.1
 Install-Package System.Data.Common -Version 4.3.0
 Install-Package System.Configuration.ConfigurationManager -Version 4.7.0
 Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
-Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4"
-Install-Package Serilog.Sinks.Elasticsearch -Version 8.0.1
+Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4
+Install-Package Serilog.Sinks.ElasticSearch -Version 8.0.1
 Install-Package Serilog.Extensions.Logging -Version 3.0.1
 Install-Package Serilog.Exceptions -Version 5.4.0
 Install-Package Serilog.Enrichers.Environment -Version 2.1.3
@@ -210,8 +210,8 @@ Install-Package Serilog -Version 2.9.0
 Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design -Version 3.1.3
 Install-Package Microsoft.VisualStudio.Azure.Containers.Tools.Targets -Version 1.9.10
 Install-Package Microsoft.IdentityModel.Tokens -Version 5.6.0
-Install-Package microsoft.extensions.configuration.json -Version 3.1.3
-Install-Package microsoft.extensions.configuration -Version 3.1.3
+Install-Package Microsoft.Extensions.Configuration.Json -Version 3.1.3
+Install-Package Microsoft.Extensions.Configuration -Version 3.1.3
 Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.1.3
 Install-Package Microsoft.EntityFrameworkCore.Design -Version 3.1.3
 Install-Package Microsoft.AspNetCore.Mvc.Core -Version 2.2.5
