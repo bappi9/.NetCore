@@ -194,3 +194,29 @@ iBOS
  └── logo
  └── meso
  └── crmo
+# Latest
+Install-Package System.Linq.Dynamic.Core -Version 1.0.19
+Install-Package System.IdentityModel.Tokens.Jwt -Version 1.0.19
+Install-Package system.data.SqlClient -Version 4.8.1
+Install-Package System.Data.Common -Version 4.3.0
+Install-Package System.Configuration.ConfigurationManager -Version 4.7.0
+Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
+Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc4"
+Install-Package Serilog.Sinks.Elasticsearch -Version 8.0.1
+Install-Package Serilog.Extensions.Logging -Version 3.0.1
+Install-Package Serilog.Exceptions -Version 5.4.0
+Install-Package Serilog.Enrichers.Environment -Version 2.1.3
+Install-Package Serilog -Version 2.9.0
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design -Version 3.1.3
+Install-Package Microsoft.VisualStudio.Azure.Containers.Tools.Targets -Version 1.9.10
+Install-Package Microsoft.IdentityModel.Tokens -Version 5.6.0
+Install-Package microsoft.extensions.configuration.json -Version 3.1.3
+Install-Package microsoft.extensions.configuration -Version 3.1.3
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.1.3
+Install-Package Microsoft.EntityFrameworkCore.Design -Version 3.1.3
+Install-Package Microsoft.AspNetCore.Mvc.Core -Version 2.2.5
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer -Version 3.1.0
+Install-Package Microsoft.AspNet.WebPages.WebData -Version 3.2.7
+Install-Package MediatR.Extensions.Microsoft.DependencyInjection -Version 8.0.0
+Install-Package MailKit -Version 2.7.0
+Install-Package Elastic.Apm.NetCoreAll -Version 1.4.0
