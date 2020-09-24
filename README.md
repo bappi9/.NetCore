@@ -194,6 +194,22 @@ iBOS
  └── logo
  └── meso
  └── crmo
+ 
+#Odata Swager Configuration
+Note:https://github.com/OData/WebApi/issues/2024
+services.AddMvcCore(options =>
+{
+   foreach (var outputFormatter in options.OutputFormatters.OfType<OutputFormatter>().Where(x => x.SupportedMediaTypes.Count == 0))
+   {
+          outputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+    }
+
+   foreach (var inputFormatter in options.InputFormatters.OfType<InputFormatter>().Where(x => x.SupportedMediaTypes.Count == 0))
+   {
+         inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+   }
+});
+#
 # Latest
  Install-Package System.Linq.Dynamic.Core -Version 1.1.5
 Install-Package System.IdentityModel.Tokens.Jwt -Version 5.5.0
