@@ -210,6 +210,9 @@ services.AddMvcCore(options =>
    }
 });
 #
+#MongoDB
+  Install-Package MongoDB.Bson -Version 2.11.2
+  Install-Package MongoDB.Driver -Version 2.11.2
 # Latest
  Install-Package System.Linq.Dynamic.Core -Version 1.1.5
 Install-Package System.IdentityModel.Tokens.Jwt -Version 5.5.0
