@@ -273,7 +273,7 @@ services.AddMvcCore(options =>
            
            //Addition for mongodb
             edmBuilder.EntityType<Customer>().HasKey(ai => ai.Id); // the call to HasKey is mandatory
-            edmBuilder.EnableLowerCamelCase();
+            edmBuilder.EnableLowerCamelCase();//https://stackoverflow.com/questions/55188232/why-is-my-http-post-no-longer-passing-the-body-content-after-adding-microsoft-as
             return edmBuilder.GetEdmModel();
         }
   
