@@ -9,7 +9,7 @@
 6.Install-Package Microsoft.EntityFrameworkCore.Tools
 7.Install-Package Microsoft.EntityFrameworkCore.Design
 
-#...
+# ...
 Install-Package microsoft.extensions.configuration
 Install-Package microsoft.extensions.configuration.json
 Install-Package system.data.SqlClient
@@ -124,7 +124,7 @@ Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.0.0-rc4
         endpoints.MapControllers();
     });
 }
-#Testing Pakage
+# Testing Pakage
 install-Package MartinCostello.Logging.XUnit -Version 0.1.0
 install-Package Microsoft.AspNetCore.Hosting.Abstractions -Version 2.2.0
 install-Package Microsoft.AspNetCore.Mvc.Testing -Version 3.1.3
@@ -140,11 +140,11 @@ Install-Package xunit.runner.visualstudio -Version 2.4.1
 
 Install-Package MMLib.SwaggerForOcelot -Version 2.0.0-alpha.2
 
-#Help for Swagger
+# Help for Swagger
 https://github.com/aspnet/AspNetCore.Docs/tree/master/aspnetcore/tutorials/web-api-help-pages-using-swagger/samples/3.0/TodoApi.Swashbuckle
 
 
-#Intelligence  Business Operation System
+# Intelligence  Business Operation System
 iBOS
  └── msto     
  |      ├── Controler
@@ -277,8 +277,8 @@ services.AddMvcCore(options =>
             return edmBuilder.GetEdmModel();
         }
   
-#
-#MongoDB
+ 
+# MongoDB
   Install-Package MongoDB.Bson -Version 2.11.2
   Install-Package MongoDB.Driver -Version 2.11.2
 # Latest
