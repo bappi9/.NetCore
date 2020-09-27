@@ -209,7 +209,9 @@ services.AddMvcCore(options =>
          inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
    }
 });
-#OData Stratup configureation with lowarcase
+  
+# OData Stratup configureation with lowarcase
+  
    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddSerilog();
