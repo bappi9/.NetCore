@@ -209,6 +209,72 @@ services.AddMvcCore(options =>
          inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
    }
 });
+#OData Stratup configureation with lowarcase
+   public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.AddSerilog();
+            app.UseAllElasticApm(Configuration);
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseCors(x => x
+                     .AllowAnyOrigin()
+                     .AllowAnyMethod()
+                     .AllowAnyHeader());
+
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseAuthorization();
+            app.ConfigureCustomExceptionMiddleware();
+
+            //Enable Swagger middleware and endpoint
+
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "sme/swagger/{documentName}/swagger.json";
+            });
+
+            //specifying the Swagger JSON endpoint.
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/sme/swagger/v1/swagger.json", "Procurement Management");
+                c.RoutePrefix = "sme/swagger";
+            });
+
+
+            app.UseHttpsRedirection();
+
+            //app.UseMvc(routeBuilder =>
+            //{
+            //    routeBuilder.EnableDependencyInjection();
+            //    routeBuilder.Expand().Select().Count().Filter().OrderBy();
+            //    //routeBuilder.Select().Filter().Expand();
+            //    routeBuilder.MapODataServiceRoute("sme", "sme", GetEdmModel());
+            //});
+            app.UseEndpoints(endpoint=>
+            {
+                endpoint.EnableDependencyInjection();
+                endpoint.Expand().Select().Count().Filter().OrderBy();
+                endpoint.MapODataRoute(routeName: "sme", routePrefix: "sme",model: GetEdmModel());
+              
+            });
+
+        }
+        private IEdmModel GetEdmModel()
+        {
+            var edmBuilder = new ODataConventionModelBuilder();
+            edmBuilder.EntitySet<Customer>("Customer");
+           
+           //Addition for mongodb
+            edmBuilder.EntityType<Customer>().HasKey(ai => ai.Id); // the call to HasKey is mandatory
+            edmBuilder.EnableLowerCamelCase();
+            return edmBuilder.GetEdmModel();
+        }
+  
 #
 #MongoDB
   Install-Package MongoDB.Bson -Version 2.11.2
