@@ -277,7 +277,8 @@ services.AddMvcCore(options =>
             return edmBuilder.GetEdmModel();
         }
   
- 
+# Odata
+Install-Package Microsoft.AspNetCore.OData -Version 7.5.0
 # MongoDB
   Install-Package MongoDB.Bson -Version 2.11.2
   Install-Package MongoDB.Driver -Version 2.11.2
