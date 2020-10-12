@@ -279,6 +279,7 @@ services.AddMvcCore(options =>
   
 # Odata
 Install-Package Microsoft.AspNetCore.OData -Version 7.5.0
+Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 3.1.8
 # MongoDB
   Install-Package MongoDB.Bson -Version 2.11.2
   Install-Package MongoDB.Driver -Version 2.11.2
