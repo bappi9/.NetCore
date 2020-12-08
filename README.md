@@ -309,3 +309,32 @@ Install-Package Microsoft.AspNet.WebPages.WebData -Version 3.2.7
 Install-Package MediatR.Extensions.Microsoft.DependencyInjection -Version 8.0.0
 Install-Package MailKit -Version 2.7.0
 Install-Package Elastic.Apm.NetCoreAll -Version 1.4.0
+
+# API Project Stable Packages
+
+Install-Package Elastic.Apm.NetCoreAll -Version 1.7.1
+Install-Package MailKit -Version 2.10.0
+Install-Package MediatR.Extensions.Microsoft.DependencyInjection -Version 9.0.0
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer -Version 3.1.10
+Install-Package Microsoft.AspNetCore.Mvc.Core -Version 2.2.5
+Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 3.1.10
+Install-Package Microsoft.AspNetCore.OData -Version 7.5.2
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 5.0.0
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 5.0.0
+Install-Package Microsoft.Extensions.Configuration -Version 5.0.0
+Install-Package Microsoft.Extensions.Configuration.Json -Version 5.0.0
+Install-Package Microsoft.IdentityModel.Tokens -Version 6.8.0
+Install-Package Serilog -Version 2.10.0
+Install-Package Serilog.Enrichers.Environment -Version 2.1.3
+Install-Package Serilog.Exceptions -Version 6.0.0
+Install-Package Serilog.Extensions.Logging -Version 3.0.1
+Install-Package Serilog.Sinks.ElasticSearch -Version 8.4.1
+Install-Package Swashbuckle.AspNetCore -Version 5.6.3
+Install-Package Swashbuckle.AspNetCore.Annotations -Version 5.6.3
+Install-Package System.Configuration.ConfigurationManager -Version 4.7.0
+Install-Package System.Data.Common -Version 4.3.0
+Install-Package System.Data.SqlClient -Version 4.8.2
+Install-Package System.IdentityModel.Tokens.Jwt -Version 6.8.0
+Install-Package System.Linq.Dynamic.Core -Version 1.2.6
+
+
